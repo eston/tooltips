@@ -73,7 +73,7 @@
   function showTooltip() {
     shown = true;
     var tooltipContent = $(target).find('div.tooltip-content');
-    if (!options.content && tooltipContent.length) {
+    if (tooltipContent.length) {
       options.content = $(tooltipContent.get(0)).html();
     }
     if (content) {
